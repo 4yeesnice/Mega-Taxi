@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.model.Config;
+import org.example.model.Parrot;
+import org.example.model.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -11,11 +14,12 @@ public class App {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 
 
-        Parrot p = context.getBean(Parrot.class);
 
-        whatever w = context.getBean(whatever.class);
+        Person person = context.getBean(Person.class);
 
-        System.out.println("Parrot's name: " + p.getName());
+
+        System.out.println("Person's name: " + person.getName());
+        System.out.println("Person's parrot: " + person.getParrot());
 
 
 

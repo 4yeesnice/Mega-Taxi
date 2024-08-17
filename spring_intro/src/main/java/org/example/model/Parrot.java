@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 
 import org.springframework.stereotype.Component;
@@ -7,10 +7,12 @@ import org.springframework.stereotype.Component;
 public class Parrot {
 
 
-    public Parrot(){
-        this.name = "Nigger";
-    }
+
     private String name;
+
+    public Parrot() {
+        System.out.println("Parrot created");
+    }
 
     public String getName() {
         return name;
@@ -18,5 +20,11 @@ public class Parrot {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'';
+
     }
 }
