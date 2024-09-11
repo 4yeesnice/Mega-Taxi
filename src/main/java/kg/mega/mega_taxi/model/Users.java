@@ -2,9 +2,13 @@ package kg.mega.mega_taxi.model;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "users")
+@Data
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

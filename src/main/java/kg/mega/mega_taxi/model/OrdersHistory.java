@@ -23,7 +23,6 @@ public class OrdersHistory {
     @JoinColumn(name = "driver")
     private Users driver;
 
-    @Column(name = "price")
     private double price;
 
     @OneToOne

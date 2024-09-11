@@ -2,12 +2,14 @@ package kg.mega.mega_taxi.model;
 
 
 import jakarta.persistence.*;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Cascade;
 
 import java.util.List;
 
 @Entity
 @Table(name = "roles")
+@NoArgsConstructor
 public class Roles {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
